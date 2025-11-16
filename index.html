@@ -3,114 +3,206 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>アルコール外来 開設のお知らせ</title>
+<title>アルコール外来 開設のお知らせ | 乾杯クリニック（飲み会のご案内）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-  body {
-    font-family: "Segoe UI", sans-serif;
-    background: #fafafa;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.8;
-  }
-  .banner {
-    background: #4a90e2;
-    color: #fff;
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 28px;
-    font-weight: 700;
-  }
-  .container {
-    max-width: 900px;
-    background: #fff;
-    margin: 40px auto;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  h2 {
-    border-left: 6px solid #4a90e2;
-    padding-left: 10px;
-    margin-top: 40px;
-  }
-  .symptoms ul,
-  .menu table {
-    margin-top: 10px;
-  }
-  ul {
-    padding-left: 20px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-  }
-  table th, table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  table th {
-    background: #f0f6ff;
-    font-weight: 600;
-  }
-  .btn-area {
-    margin: 30px 0;
-    text-align: center;
-  }
-  .reserve-btn {
-    background: #4a90e2;
-    padding: 14px 28px;
-    color: #fff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .greeting {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
-  }
-</style>
+        body {
+            font-family: "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
+            background: #f7fdf7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #b8e8c8, #f8f3c4);
+            padding: 40px 20px;
+            text-align: center;
+            color: #2e4f3e;
+        }
+        header img {
+            max-width: 180px;
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            border: 3px solid #e8f8e1;
+        }
+        h2.section-title {
+            color: #3e6b52;
+            border-left: 8px solid #b7e4a8;
+            padding-left: 10px;
+            margin-top: 50px;
+        }
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .menu-table th {
+            background: #eaf8d9;
+            padding: 10px;
+            font-weight: bold;
+            border: 1px solid #cfe8b7;
+        }
+        .menu-table td {
+            padding: 10px;
+            border: 1px solid #def1c8;
+        }
+        .intro-img, .menu-img, .footer-img {
+            width: 100%;
+            max-height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 20px 0;
+            background: #eee;
+        }
+        .reserve-button {
+            display: inline-block;
+            padding: 14px 26px;
+            background: #9cd87d;
+            color: #fff;
+            border-radius: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 15px 0;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+        .reserve-button:hover {
+            background: #86c369;
+        }
+    </style>
 </head>
 <body>
-  <div class="banner">
-    アルコール外来 開設のお知らせ（飲み会のご案内）
-  </div>
+  <header>
+    <div class="wrap topbar">
+      <div class="brand">
+        <div class="logo">乾杯</div>
+        <div>
+          <div class="title">アルコール外来 〜乾杯クリニック〜</div>
+          <div style="color:rgba(255,255,255,0.9);font-size:13px">チームの笑顔と活力を守る、飲み会のご案内</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">概要</a></li>
+          <li><a href="#menu">治療メニュー</a></li>
+          <li><a href="#reserve">予約</a></li>
+          <li><a href="#contact">幹事へ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <div class="container">
-    <p>日頃より当院（チーム内観察所）へのご協力、ありがとうございます。<br>
-    最近、チームの様子を観察していると、ちょっと気になる症状がちらほら見受けられるようになってきました。<br>
-    ここ数カ月、当院において以下の症状が目立つようになってきております。</p>
+  <main class="wrap">
+    <div class="hero">
+      <div class="hero-card">
+        <span class="pill">新設</span>
+        <h1>アルコール外来開設のお知らせ（飲み会のご案内）</h1>
+        <p class="lead">日頃より当院（チーム内観察所）へのご協力、ありがとうございます。最近、チームの様子を観察していると、ちょっと気になる症状がちらほら見受けられるようになってきました。ここ数カ月、当院において以下の症状が目立つようになってきております。</p>
 
-    <ul>
-      <li>活力低下</li>
-      <li>交流減少</li>
-      <li>笑顔不足症候群</li>
-      <li>週末虚脱症状</li>
-      <li>仕事中の集中力低下</li>
-    </ul>
+        <div class="card symptoms">
+          <h3>最近目立つ症状</h3>
+          <ul>
+            <li>活力低下</li>
+            <li>交流減少</li>
+            <li>笑顔不足症候群</li>
+            <li>週末虚脱症状</li>
+            <li>仕事中の集中力低下</li>
+          </ul>
+          <p style="margin-top:12px;color:var(--muted)">これらは放置すると、笑顔の減少やチーム内コミュニケーションの低下につながる可能性があります。そこで、チームの健康と笑顔を守るため、アルコール外来を開設いたしました。</p>
+        </div>
+      </div>
 
-    <p>これらは放置すると、笑顔の減少やチーム内コミュニケーションの低下につながる可能性があります。<br>
-    そこで、チームの健康と笑顔を守るため、アルコール外来を開設いたしました。</p>
+      <aside class="contact">
+        <h3>乾杯診療（飲み会）概要</h3>
+        <p style="margin:6px 0;color:var(--muted)">日時：以下ボタンより受診の予約をおねがいします。</p>
+        <a class="reserve" id="reserve" href="#">WEB予約（調整さん）</a>
+        <hr style="margin:12px 0;border:none;border-top:1px solid #eef6ff">
+        <p style="margin:6px 0"><strong>場所：</strong>投票により決定</p>
+        <p style="margin:6px 0"><strong>目的：</strong>チーム活力向上および笑顔創出</p>
+        <p style="margin:6px 0;color:var(--muted)"><strong>副作用：</strong>翌日やや眠気（多くの場合は幸福感で相殺）</p>
+        <hr style="margin:12px 0;border:none;border-top:1px solid #eef6ff">
+        <p style="font-size:13px;color:var(--muted)">ご不明点やご要望があれば、主治医（幹事）までお気軽にご相談ください。</p>
+      </aside>
+    </div>
 
-    <h2>乾杯診療理念</h2>
+    <section id="menu" class="grid">
+      <div class="card">
+        <h2>乾杯診療理念</h2>
+        <h3>「ともに酔いしれる医療」</h3>
+        <p>患者さん（参加者）それぞれの飲み方や悩みをともに考え、ともに乾杯し、ともに笑顔を創出します。お酒の種類やペースに迷ったら、みんなで相談しながら最適な一杯を見つけましょう。飲みすぎ注意の方には、絶妙なタイミングでお水やおつまみを処方し「明日も元気に過ごせる飲み方」を一緒に探求します。私たちは、患者さんとともに楽しい時間を共有し、無理なく、地道に、笑顔と健康を目指します。</p>
 
-    <h3>「ともに酔いしれる医療」</h3>
-    <p>患者さん（参加者）それぞれの飲み方や悩みをともに考え、ともに乾杯し、ともに笑顔を創出します。<br>
-    お酒の種類やペースに迷ったら、みんなで相談しながら最適な一杯を見つけましょう。<br>
-    飲みすぎ注意の方には、絶妙なタイミングでお水やおつまみを処方し「明日も元気に過ごせる飲み方」を一緒に探求します。<br>
-    私たちは、患者さんとともに楽しい時間を共有し、無理なく、地道に、笑顔と健康を目指します。</p>
+        <h3 style="margin-top:18px">「顔の見える酔い連携」</h3>
+        <p>乾杯をきっかけに、隣の席の方ともすぐに打ち解けられる雰囲気を大切にしています。幹事やベテラン参加者が、あなたの飲み方・楽しみ方を全力でサポート。困ったときや迷ったときも、すぐに相談できる安心と信頼のネットワークがここにあります。</p>
 
-    <h3>「顔の見える酔い連携」</h3>
-    <p>乾杯をきっかけに、隣の席の方ともすぐに打ち解けられる雰囲気を大切にしています。<br>
-    幹事やベテラン参加者が、あなたの飲み方・楽しみ方を全力でサポート。<br>
-    困ったときや迷ったときも、すぐに相談できる安心と信頼のネットワークがここにあります。</p>
+        <h3 style="margin-top:18px">「信頼しあう酔い場」</h3>
+        <p>違う好み、違うペースの人が集まっても、最も大切なのはお互いを尊重し信頼すること。参加者全員が気持ちよく過ごせる場づくりを心がけます。「飲みすぎ注意」「無理せず楽しむ」－この合言葉のもと、誰もが安心して参加できる奇跡の外来を目指します。</p>
+      </div>
 
-    <h3>「信頼しあう酔い場」</h3>
-    <p>違う好み、違うペースの人が集まっても、最も大切なのはお互いを尊重し信頼すること。<br>
-    参加者全員が気持ちよく過ごせる場づくりを心がけます。<br>
+      <div class="card">
+        <h2>乾杯治療メニュー</h2>
+        <table>
+          <tr>
+            <th>症状</th>
+            <th>治療方法</th>
+            <th>効果</th>
+          </tr>
+          <tr>
+            <td>活力低下・週末虚脱症状</td>
+            <td>発泡性栄養液（ビール）注入</td>
+            <td>活力化、機嫌改善、週末活力補充</td>
+          </tr>
+          <tr>
+            <td>交流減少・笑顔不足症候群</td>
+            <td>談笑リハビリ</td>
+            <td>交流活性化、笑顔増加、信頼ホルモン上昇</td>
+          </tr>
+          <tr>
+            <td>仕事中の集中力低下</td>
+            <td>シナプス直撃カンパイ療法</td>
+            <td>注意力回復、会話活性化</td>
+          </tr>
+        </table>
+
+        <h3 style="margin-top:14px">乾杯診療（飲み会）概要</h3>
+        <ul style="color:var(--muted);margin:8px 0 0 18px">
+          <li>日時：以下ボタンより受診の予約をおねがいします。</li>
+          <li>WEB予約（調整さん）</li>
+          <li>場所：投票により決定</li>
+          <li>目的：チーム活力向上および笑顔創出</li>
+          <li>副作用：翌日やや眠気（多くの場合は幸福感で相殺）</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:26px">
+      <div class="card">
+        <h2>院長ご挨拶（念のためですがフィクションです）</h2>
+        <div class="greeting">
+          <p>皆さま、いつもチームの活動にご協力いただきありがとうございます。</p>
+          <p>最近、チームの元気や笑顔が少し減ってきたように感じています。</p>
+          <p>今回の「アルコール外来」は、皆さんがリフレッシュし、また新たなつながりや活力を得る場になればと願っています。</p>
+          <p>ぜひ気軽にご参加いただき、楽しいひとときを一緒に過ごしましょう。</p>
+        </div>
+        <p style="margin-top:12px">ご不明点やご要望があれば、主治医（幹事）までお気軽にご相談ください。<br>それでは、皆さまのご来院（ご参加）を楽しみにしております！</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>Clinic Banner — アルコール外来 開設のお知らせ | 乾杯クリニック</small>
+    </div>
+  </footer>
+</body>
 </html>
